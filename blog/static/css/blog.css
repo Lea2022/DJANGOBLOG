@@ -1,0 +1,134 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for headers */
+h1, h2, h3, h4 {
+    font-family: 'Lobster', cursive;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+/* Links in headers */
+h1 a, h2 a {
+    color: #20c200;
+    transition: color 0.3s;
+}
+h1 a:hover, h2 a:hover {
+    color: #FF7A33;
+}
+
+/* Body background and padding */
+body {
+    padding: 0;
+    margin: 0; /* Ensure no margin above the page */
+    background-color: #F7F7F7;
+    font-family: Arial, sans-serif;
+    color: #4A4A4A;
+}
+
+/* Page header with flex layout */
+.page-header {
+    display: flex;
+    justify-content: space-between; /* Space between title and menu items */
+    align-items: center;
+    background-color: #C25100;
+    color: #ffffff;
+    padding: 30px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.page-header h1 {
+    font-size: 40pt;
+    margin: 0;
+}
+.page-header h1 a, 
+.page-header h1 a:visited, 
+.page-header h1 a:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Container for top menu items aligned to the right */
+.top-menu-container {
+    display: flex;
+    gap: 15px; /* Space between menu items */
+    align-items: center; /* Center-align items vertically */
+}
+
+/* Styling for top menu links */
+.top-menu {
+    color: #ffffff;
+    font-size: 25pt;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center; /* Ensure icons and text are vertically centered */
+}
+.top-menu:hover {
+    color: #FF7A33;
+}
+
+/* Main content spacing */
+.content {
+    margin: 40px 50px;
+}
+
+/* Post entries */
+.post {
+    margin-bottom: 60px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.post h2 a, .post h2 a:visited {
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.post h2 a:hover {
+    color: #C25100;
+}
+
+/* Date styling */
+.date {
+    color: #828282;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+/* Save button styling */
+.save {
+    float: right;
+    background-color: #C25100;
+    color: #1e8609;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.save:hover {
+    background-color: #FF7A33;
+}
+
+/* Input fields in forms */
+.post-form textarea, .post-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Comment box styling */
+.comment {
+    margin: 20px 0px 20px 20px;
+    padding: 15px;
+    background-color: #FAFAFA;
+    border-left: 3px solid #C25100;
+    border-radius: 4px;
+}
